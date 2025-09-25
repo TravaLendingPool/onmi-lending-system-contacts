@@ -1,21 +1,50 @@
+# build and cache
+cache/
+out/
+zkout/
+
+# general
 .env
+.env.bk
+.assets
 
-#Buidler files
-cache
-artifacts
+# artifacts
+reports/
+diffs/
+downloads/
 
-node_modules
-dist/
-build/
-.vscode
+# editors
 .idea
-ts-types/
-contracts/hardhat-dependency-compiler/
+.vscode
+lcov*
 
-coverage
-.coverage_artifacts
-.coverage_cache
-.coverage_contracts
+yarn.lock
+bun.lockb
+node_modules/
+
+# ignore foundry deploy artifacts
+broadcast/
+
+.DS_Store
+
+# certora
+.certora*
+.certora*.json
+**.last_conf*
+certora-logs
+certora_debug_log.txt
+resource_errors.json
+
+# invariants
+_corpus/
+crytic-export/
+slither_results.json
+
+# more
+cache/
+artifacts/
+build/
+.openzeppelin
 typechain
-types
-deployments
+typechain-types
+dist/

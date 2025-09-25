@@ -1,21 +1,15 @@
 {
-    "compilerOptions": {
-        "target": "es2018",
-        "module": "commonjs",
-        "strict": true,
-        "esModuleInterop": true,
-        "outDir": "dist",
-        "importHelpers": false,
-        "resolveJsonModule": true
-    },
-    "include": [
-        "deploy",
-        "tasks",
-        "helpers",
-        "typechain",
-        "tests",
-        "markets"
-     ],
-     "files": ["./hardhat.config.ts"]
-
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }
